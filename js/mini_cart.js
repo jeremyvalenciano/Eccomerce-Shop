@@ -144,7 +144,7 @@ function createCart() {
     buyBtn.style.display = 'block';
   } else {
     cleanCartBtn.style.display = 'none';
-    buyBtn.style.display = 'none';
+    buyBtn  .style.display = 'none';
   }
   calculateTotal();
 }
