@@ -83,6 +83,12 @@ header {
   margin: auto 15px;
 }
 
+.banner__menu-icon {
+  display: none;
+  color: white;
+  margin: auto 15px;
+}
+
 .banner__cart-icon:hover {
   cursor: pointer;
 }
@@ -161,11 +167,11 @@ header {
 .cart {
   width: 400px;
   background-color: #F5F5F5;
+  position: fixed;
   display: none;
   border-radius: 15px;
   margin: 25px;
   padding: 15px 20px;
-  position: fixed;
   top: 55px;
   right: 100px;
   display: flex;

@@ -1,18 +1,56 @@
 @media only screen and (max-width: 480px) {
 
   .products-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10px 25%;
+    display: block;
   }
 
   .banner {
     margin: 0;
-    max-width: 480px;
+    background-size: cover;
+  }
+
+  .banner__logo {
+    width: auto;
+    margin-right: 35px;
+  }
+
+  .banner__title {
+    min-height: 150px;
+  }
+
+  .banner__logo img {
+    margin: 25px;
+    width: 130px;
   }
 
   .container {
-    max-width: 725px;
-    margin: 0 25px;
+    width: auto;
   }
+
+  .products__card {
+    margin: 10px 15px;
+  }
+
+  .product-image {
+    width: 210px;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+  }
+
+  .products {
+    margin: 60px auto;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .banner__menu-icon {
+    display: block;
+    font-size: 35px;
+  }
+
 }
