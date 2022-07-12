@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Stratus</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!--Font awesome kit version 5.15.4-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <section class="banner">
+    <div class="container">
+      <header>
+        <div class="banner__logo">
+          <img src="/img/logo_white.png" alt="logo-image">
+        </div>
+        <div>
+          <nav>
+            <ul class="navbar">
+              <li><a class="navbar__link" href="#">Home</a></li>
+              <li><a class="navbar__link" href="#">Pages</a></li>
+              <li><a class="navbar__link" href="#">Portfolio</a></li>
+              <li><a class="navbar__link" href="#">Features</a></li>
+              <li><a class="navbar__link" href="#">Blog</a></li>
+              <li><a class="navbar__link" href="#">Shop</a></li>
+              <button class="navbar__purchase-btn">Purchase</button>
+            </ul>
+          </nav>
+        </div>
+        <div class="vl"></div>
+        <div class="banner__cart-icon">
+          <i class="fa-solid fa-bag-shopping fa-xl"></i>
+        </div>
+      </header>
+      <h1 class="banner__title">Shop</h1>
+    </div>
+  </section>
+  <section class="products">
+    <div class="products-container">
+      <div class="products__card">
+        <img class="product-image" src="/img/product_1.jpg" alt="product-image">
+        <p class="product-name">Surge</p>
+        <p class="product-price">$180.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="1">Add to cart</button>
+        </div>
+      </div>
+      <div class="products__card">
+        <img class="product-image" src="/img/product_2.jpg" alt="product-image">
+        <p class="product-name">Charge</p>
+        <p class="product-price">$179.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="2">Add to cart</button>
+        </div>
+      </div>
+      <div class="products__card">
+        <img class="product-image" src="/img/product_3.jpg" alt="product-image">
+        <p class="product-name">Charge HR</p>
+        <p class="product-price">$189.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="3">Add to cart</button>
+        </div>
+      </div>
+      <div class="products__card">
+        <img class="product-image" src="/img/product_4.jpg" alt="product-image">
+        <p class="product-name">Flex</p>
+        <p class="product-price">$199.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="4">Add to cart</button>
+        </div>
+      </div>
+      <div class="products__card">
+        <img class="product-image" src="/img/product_5.jpg" alt="product-image">
+        <p class="product-name">Zip</p>
+        <p class="product-price">$89.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="5">Add to cart</button>
+        </div>
+      </div>
+      <div class="products__card">
+        <img class="product-image" src="/img/product_6.jpg" alt="product-image">
+        <p class="product-name">One</p>
+        <p class="product-price">$129.00</p>
+        <div class="rate">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+        </div>
+        <div class="button-container">
+          <button class="cart-btn" data-id="6">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cart">
+    <div class="cart__header">
+      <p>CART</p>
+      <button class="close-btn"> X </button>
+    </div>
+    <div class="list-item">
+    </div>
+    <button class="clean-cart">Clean Cart</button>
+    <p class="total-text">Total: <span class="total-cart"></span>
+    </p>
+    <button class="buy-btn"><a href="#">Buy now!</a></button>
+  </div>
+  <script src="/js/mini_cart.js"></script>
+
+</body>
+
+</html>
