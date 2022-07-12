@@ -12,12 +12,23 @@ const totalCart = document.querySelector('.total-cart');
 totalCart.addEventListener("click", createCart);
 const buyBtn = document.querySelector('.buy-btn');
 buyBtn.addEventListener("click", createCart);
+const menuBtnMobile = document.querySelector('.banner__menu-icon');
+menuBtnMobile.addEventListener("click", displayMenu);
+
 
 
 //cart products
 let productsCart = [];
 const cart = document.querySelector('.cart');
 const listItem = document.querySelector('.list-item')
+function displayMenu() {
+  const navbar = document.querySelector('.navbar');
+  if (navbar.classList.contains('navbar-mobile')) {
+    navbar.classList.remove('navbar-mobile');
+  } else {
+    navbar.classList.add('navbar-mobile');
+  }
+}
 
 //Display and Close Cart
 function displayCart() {
@@ -144,7 +155,7 @@ function createCart() {
     buyBtn.style.display = 'block';
   } else {
     cleanCartBtn.style.display = 'none';
-    buyBtn  .style.display = 'none';
+    buyBtn.style.display = 'none';
   }
   calculateTotal();
 }

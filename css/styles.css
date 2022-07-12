@@ -61,6 +61,10 @@ header {
   margin: auto 0;
 }
 
+.banner__menu-icon {
+  display: none;
+}
+
 .navbar__purchase-btn {
   border: 1px solid #fff;
   background: none;
@@ -83,10 +87,14 @@ header {
   margin: auto 15px;
 }
 
-.banner__menu-icon {
-  display: none;
+.banner__menu-icon button {
+  background: none;
+  margin: 15px;
+  border: none;
+}
+
+.banner__menu-icon i {
   color: white;
-  margin: auto 15px;
 }
 
 .banner__cart-icon:hover {

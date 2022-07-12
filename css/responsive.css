@@ -40,17 +40,57 @@
     width: 100%;
   }
 
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #F5F5F5;
+    color: black;
+    width: 165px;
+    right: 70px;
+    top: 50px;
+
+  }
+
+  .navbar-mobile li a {
+    font-size: 19px;
+    color: black;
+  }
+
+  .navbar-mobile li {
+    margin-top: 10px;
+  }
+
+  .navbar__purchase-btn {
+    color: black;
+    border-color: black;
+    transition: all .15s;
+  }
+
+  .navbar__purchase-btn:active {
+    color: white;
+    background-color: black;
+  }
+
   .products {
     margin: 60px auto;
   }
 
   .vl {
-    display: none;
+    visibility: hidden;
   }
 
   .banner__menu-icon {
     display: block;
     font-size: 35px;
+  }
+
+  .cart {
+    width: 360px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+    position: fixed;
+    right: auto;
   }
 
 }
