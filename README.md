@@ -8,7 +8,8 @@ This project is a simulation of an eccommerce store cart, we can add products to
 - HTML
 - CSS
 - Javascript
-- DOM manipuation
+- DOM manipulation
 ## Design inspired in
 https://demo.themovation.com/stratus/shop-2/
+##license
 
