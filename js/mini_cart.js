@@ -15,6 +15,11 @@ buyBtn.addEventListener("click", createCart);
 const menuBtnMobile = document.querySelector('.banner__menu-icon');
 menuBtnMobile.addEventListener("click", displayMenu);
 
+document.addEventListener('DOMContentLoaded', () => {
+  productsCart = JSON.parse(localStorage.getItem('Cart')) || [];
+  createCart();
+});
+
 
 
 //cart products
@@ -43,7 +48,7 @@ function closeCart() {
 function addProduct(event) {
   const productSelected = event.target.parentElement.parentElement;
   readDataProduct(productSelected);
-
+  syncStorage();
 }
 
 function deleteProduct(event) {
@@ -52,6 +57,7 @@ function deleteProduct(event) {
   //delete by data id
   //return every product diferent by the productId selected
   productsCart = productsCart.filter(product => product.id !== productId);
+  syncStorage();
   createCart(); //load the cart again
 }
 
@@ -83,11 +89,16 @@ function readDataProduct(product) {
     //copy of the array and the new product
     productsCart = [...productsCart, infoProduct];
   }
+  syncStorage();
   createCart();
 }
 
+function syncStorage() {
+  localStorage.setItem("Cart", JSON.stringify(productsCart));
+}
 //create products Carts with html
 function createCart() {
+
   //clean cart (List Item)
   listItem.innerHTML = '';
   productsCart.forEach((product) => {
@@ -162,6 +173,7 @@ function createCart() {
 
 function cleanCart() {
   productsCart = [];
+  syncStorage();
   createCart();
 }
 
@@ -179,6 +191,7 @@ function increaseItem(event) {
       }
     }
   })
+  syncStorage();
   createCart();
 }
 
@@ -195,7 +208,8 @@ function decreaseItem(event) {
         product.quantity--;
       }
     }
-  })
+  });
+  syncStorage();
   createCart();
 }
 
